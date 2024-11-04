@@ -56,10 +56,10 @@ body {
 }
 
 .col-3 {
-    width: 25%;
-    background-color: rgb(227, 190, 190);
-
+    width: 20%;
+    background-color: rgb(255, 255, 255);
 }
+
 
 .col-4 {
     width: 33.33%;
