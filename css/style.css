@@ -1,0 +1,410 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    color: rgb(18, 0, 110);
+}
+
+/* For desktop: */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #ffeced;
+    
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+}
+/* For desktop: */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .row {
+        flex-wrap: wrap;
+    }
+}
+
+.justify-content-between {
+    justify-content: space-between;
+    
+}
+
+.align-items-center {
+    align-items: center;
+    background-color: rgb(227, 190, 190);
+
+}
+
+/* For desktop: */
+.col-1 {
+    width: 8.33%;
+    
+}
+
+.col-2 {
+    width: 16.66%;
+    
+}
+
+.col-3 {
+    width: 25%;
+    background-color: rgb(227, 190, 190);
+
+}
+
+.col-4 {
+    width: 33.33%;
+    
+}
+
+.col-5 {
+    width: 41.66%;
+    
+}
+
+.col-6 {
+    width: 50%;
+    
+}
+
+.col-7 {
+    width: 58.33%;
+    
+}
+
+.col-8 {
+    width: 66.66%;
+    
+}
+
+.col-9 {
+    width: 75%;
+    background-color: rgb(227, 190, 190);
+
+}
+
+.col-10 {
+    width: 83.33%;
+    
+}
+
+.col-11 {
+    width: 91.66%;
+    
+}
+
+.col-12 {
+    width: 100%;
+    
+}
+
+/* For mobile: */
+@media only screen and (max-width: 1000px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+/* For desktop: */
+[class*="col-"] {
+    padding: 15px;
+}
+
+.shadow {
+    box-shadow: 0 0 20px rgb(100, 3, 3);
+    border-radius: 10px;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    nav li {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+    nav ul {
+        background-color: rgb(243, 251, 254);
+    }
+}
+
+nav li a {
+    color: rgb(18, 0, 110);
+}
+
+nav li:hover {
+    background-color:  rgb(225, 245, 253);
+}
+
+.text-right{
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+.text-center {
+    text-align: center;
+}
+.py-3 {
+    padding: 16px 0;
+}
+.px-3 {
+    padding: 0 16px;
+}
+.p-3 {
+    padding: 16px;
+    background-color: #ffeced;
+}
+
+.bg-azul-o {
+    background-color: rgb(123,18,18);
+}
+.bg-azul-u {
+    background-color: rgb(123, 18, 18);
+}
+.bg-azul-c {
+    background-color: rgb(240, 249, 252);
+}
+.bg-orange {
+    background-color: orange;
+}
+.text-white {
+    color: white;
+}
+.text-red {
+    color: red;
+    font-size: 30px;
+    background-color: cyan;
+}
+footer h1 {
+    border-bottom-left-radius: 10px;
+}
+footer h1 {
+    border-bottom-right-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#btnmenu {
+    font-size: 40px;
+    display: none;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    #btnmenu {
+        display: inline;
+    }
+    #menu{
+        display: none;
+    }
+}
+@media screen and (max-width: 1600px) and (min-width: 1000px)  {
+    #menu{
+        display: block;
+    }
+}
+
+.etiqueta {
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+}
+.atributo {
+    color: rgb(10, 235, 48);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#enlaces a {
+    color: blue;
+    text-decoration: underline;
+}
+ 
+#listas .customdes li {
+    list-style-type: square;
+}
+#listas .customdes li li {
+    list-style-type: disc;
+}
+#listas .customdes li li li {
+    list-style-type: circle;
+}
+
+#listas .customord li {
+    list-style-type: upper-alpha;
+}
+#listas .customord li li {
+    list-style-type: upper-roman;
+}
+#listas .customord li li li {
+    list-style-type: decimal;
+}
+
+#listas .customico li li {
+    list-style-image: url("../img/corazones.png");
+}
+#listas .customico li li li {
+    list-style-image: none;
+    list-style-type: circle;
+}
+
+.listascustomdef {
+    font-size: 18px;
+}
+.listascustomdef dt {
+    font-size: 24px;
+    background-color: bisque;
+    color: rgb(85, 6, 45);
+    font-weight: bold;
+    display: inline;
+}
+
+.striped tr :nth-child(odd) {
+   background-color: rgb(159, 234, 236) ;
+  }
+  .striped tr :nth-child(even) {
+background-color: rgb(246, 222, 191);  
+ }
+
+ .tablafc th {
+    background-color:rgb(88, 60, 224);
+    color: white;
+ }
+
+ .horario {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+ }
+ .horario th {
+    background-color: #f0f0f0;
+    color: #337485;
+ }
+ .s1Daw {
+font-style: italic;
+font-size: 150%;
+ }
+ .lmsg {
+    background-color: #64b4ef;
+ }
+ .ende {
+    background-color: #97db97;
+ }
+ .prog {
+    background-color: #d2d26e;
+ }
+ .pimd {
+    background-color: #bc777b;
+ }
+ .dasp {
+    background-color: #ffa264;
+ }
+ .bdd {
+    background-color: #66aa94;
+ }
+ .ipcg {
+    background-color: #01df00;
+ }
+ .sasp {
+    background-color: #d1d3f9;
+ }
+ .sisi {
+    background-color: #0080ff;
+ }
+ .ipe {
+    background-color: #eff0c8;
+ }
+
+ .flogin {
+    width: 40%;
+    float: left;
+ }
+ .fregister{
+    width: 40%;
+    float: right;
+ }
+ .cb {
+    clear: both;
+ }
+ .cabeza{
+    width: 40%;
+    margin: 0 auto;
+ }
+
+ .form {
+    width: 40%;
+    margin: 0 auto;
+    background-color: #ebbec0;
+ }
+.form legend {
+    background-color: rgb(100, 35, 35);
+    font-size: 24px;
+    color: white;
+}
+.form label {
+    background-color: #ab696c;
+    color: white;
+}
+.btn {
+    border: 0;
+    border-radius: 8px;
+    padding: 6px 30px;
+    font-size: 16px;
+}
+.btn-red {
+    background-color: rgb(100, 35, 35);
+    color: white;
+}
+.btn-blue {
+    background-color: rgb(20, 134, 215);
+    color: white;
+}
+.btn-purple {
+    background-color: rgb(126, 46, 126);
+    color: white;
+}
+
+.col3 {
+    width: 33.33%;
+    float: left;
+}
+.col3 img {
+    padding: 6px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#multimedia video {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+#multimedia audio {
+    display: block;
+    margin: 0 auto;
+}
+
